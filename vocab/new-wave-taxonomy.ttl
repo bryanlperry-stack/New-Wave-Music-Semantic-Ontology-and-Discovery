@@ -4,3 +4,307 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix ex:    <http://example.org/music-taxonomy/> .
 
+# =================================================================
+# CONCEPT SCHEME DECLARATION
+# =================================================================
+
+ex:NewWaveScheme a skos:ConceptScheme ;
+    skos:prefLabel "New Wave & Sonic Texture Taxonomy"@en ;
+    rdfs:comment "A SKOS/RDF taxonomy modeling the evolution of electronic, punk, post-punk, and rock genres from the late 1970s through modern micro-genres."@en ;
+    skos:hasTopConcept ex:ElectronicMusicFamily, ex:PunkAndPostPunkFamily, ex:RockAndPopFamily .
+
+# =================================================================
+# HISTORICAL ANCHOR NODES
+# =================================================================
+
+ex:NewWaveMovement a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "New Wave"@en ;
+    skos:scopeNote "A broad late-1970s to mid-1980s music and cultural movement originating from punk rock, integrating pop hooks, synthesizers, and artistic style."@en .
+
+ex:NewRomanticism a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "New Romanticism"@en ;
+    skos:altLabel "New Romantic movement"@en, "New Romantics"@en ;
+    skos:related ex:SynthPop, ex:SynthRock, ex:DanceRock, ex:NewPop, ex:GothRock, ex:PostPunk ;
+    skos:scopeNote "A late-1970s to early-1980s UK subcultural and musical movement characterized by flamboyant fashion, theatrical aesthetics, and synth-driven art pop."@en .
+
+
+# =================================================================
+# i. ELECTRONIC MUSIC FAMILY
+# =================================================================
+
+ex:ElectronicMusicFamily a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Electronic Music Family"@en ;
+    skos:topConceptOf ex:NewWaveScheme ;
+    skos:narrower ex:SynthPop, ex:Eurodisco, ex:ItaloDisco, ex:Indietronica ;
+    skos:scopeNote "Top-level concept grouping synthesizer-driven and electronic dance music genres."@en .
+
+# Synth-pop branch
+ex:SynthPop a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Synth-pop"@en ;
+    skos:altLabel "Synthesizer pop"@en, "Electropop"@en ;
+    skos:broader ex:ElectronicMusicFamily ;
+    skos:narrower ex:Coldwave, ex:BubblegumSynthPop, ex:TechnoPop ;
+    skos:related ex:NewWavePop, ex:NewPop, ex:SophistiPop, ex:NoWave, ex:HiNRG ;
+    skos:scopeNote "A subgenre of electronic music where synthesizers, sequencers, and drum machines are the primary instruments."@en .
+
+ex:Coldwave a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Coldwave"@en ;
+    skos:broader ex:SynthPop ;
+    skos:related ex:NoWave ;
+    skos:scopeNote "A minimalist, atmospheric European variant of synth-pop and post-punk."@en .
+
+ex:BubblegumSynthPop a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Bubblegum synth-pop"@en ;
+    skos:broader ex:SynthPop ;
+    skos:scopeNote "An ultra-catchy, highly commercialized variant of synth-pop."@en .
+
+ex:TechnoPop a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Techno-pop"@en ;
+    skos:broader ex:SynthPop ;
+    skos:narrower ex:NeoShibuyaKei, ex:PicoPicoPop ;
+    skos:scopeNote "Rhythmically rigorous, machine-driven electronic pop music."@en .
+
+ex:NeoShibuyaKei a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Neo-Shibuya-kei"@en ;
+    skos:broader ex:TechnoPop ;
+    skos:scopeNote "A stylistic continuation of Shibuya-kei pop infused with modern techno-pop production."@en .
+
+ex:PicoPicoPop a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Pico-pico pop"@en ;
+    skos:broader ex:TechnoPop ;
+    skos:related ex:Chiptune ;
+    skos:scopeNote "Japanese electronic micro-genre utilizing retro videogame sound chips."@en .
+
+ex:Chiptune a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Chiptune"@en ;
+    skos:related ex:PicoPicoPop ;
+    skos:scopeNote "Music produced using programmable sound generator chips of vintage computers and consoles."@en .
+
+# Eurodisco & Italo Disco branches
+ex:Eurodisco a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Eurodisco"@en ;
+    skos:broader ex:ElectronicMusicFamily ;
+    skos:related ex:ItaloDisco, ex:Eurodance, ex:Trance, ex:House ;
+    skos:scopeNote "European dance genre characterized by lush string arrangements and driving mid-tempo disco beats."@en .
+
+ex:ItaloDisco a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Italo disco"@en ;
+    skos:broader ex:ElectronicMusicFamily ;
+    skos:narrower ex:Spacesynth, ex:Synthwave, ex:HiNRG ;
+    skos:related ex:SynthPop, ex:House, ex:Trance, ex:Techno, ex:Eurodance ;
+    skos:scopeNote "Italian-produced electronic dance music featuring futuristic synthesizer melodies and drum machines."@en .
+
+ex:Spacesynth a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Spacesynth"@en ;
+    skos:broader ex:ItaloDisco ;
+    skos:scopeNote "An instrumental subgenre of Italo disco focused on outer-space themes and synthesizer arpeggios."@en .
+
+ex:Synthwave a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Synthwave"@en ;
+    skos:broader ex:ItaloDisco ;
+    skos:scopeNote "An electronic genre heavily inspired by 1980s film soundtracks and video games."@en .
+
+ex:HiNRG a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Hi-NRG"@en ;
+    skos:broader ex:ItaloDisco ;
+    skos:related ex:Eurodance, ex:House, ex:SynthPop ;
+    skos:scopeNote "Upbeat electronic dance music characterized by fast tempos and driving basslines."@en .
+
+# Indietronica branch
+ex:Indietronica a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Indietronica"@en ;
+    skos:altLabel "Indie synth-pop"@en, "Hipster synth-pop"@en ;
+    skos:broader ex:ElectronicMusicFamily ;
+    skos:narrower ex:IndieSleaze ;
+    skos:scopeNote "2000s–2010s crossover blending indie rock aesthetics with electronic production."@en .
+
+ex:IndieSleaze a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Indie sleaze"@en ;
+    skos:broader ex:Indietronica ;
+    skos:scopeNote "An aesthetic and musical micro-genre of the late 2000s reflecting electroclash and indie-dance club culture."@en .
+
+
+# =================================================================
+# ii. PUNK & POST-PUNK FAMILY
+# =================================================================
+
+ex:PunkAndPostPunkFamily a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Punk & Post-Punk Family"@en ;
+    skos:topConceptOf ex:NewWaveScheme ;
+    skos:narrower ex:PunkRock, ex:PostPunk ;
+    skos:scopeNote "Top-level concept grouping raw, aggressive, and experimental guitar-driven movements."@en .
+
+ex:PunkRock a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Punk rock"@en ;
+    skos:broader ex:PunkAndPostPunkFamily ;
+    skos:narrower ex:ReggaePunk, ex:HardcorePunk, ex:SkaPunk ;
+    skos:scopeNote "A high-energy rock movement originating in the mid-1970s characterized by fast tempos and anti-establishment ethos."@en .
+
+ex:ReggaePunk a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Reggae punk"@en ;
+    skos:broader ex:PunkRock ;
+    skos:scopeNote "Punk rock incorporating reggae rhythms and dub production techniques."@en .
+
+ex:HardcorePunk a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Hardcore punk"@en ;
+    skos:broader ex:PunkRock ;
+    skos:scopeNote "An accelerated, aggressive, and louder offshoot of punk rock."@en .
+
+ex:SkaPunk a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Ska punk"@en ;
+    skos:broader ex:PunkRock ;
+    skos:related ex:TwoTone, ex:AlternativeRock, ex:ReggaeRock ;
+    skos:scopeNote "A fusion of ska and punk rock featuring upbeat horns and fast tempos."@en .
+
+ex:PostPunk a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Post-punk"@en ;
+    skos:broader ex:PunkAndPostPunkFamily ;
+    skos:narrower ex:TwoTone, ex:GothRock, ex:IndustrialRock, ex:NoWave ;
+    skos:related ex:NewPop, ex:AlternativeRock ;
+    skos:scopeNote "An experimental offshoot of punk that incorporated art rock, funk, and electronic textures."@en .
+
+ex:TwoTone a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Two-tone"@en ;
+    skos:broader ex:PostPunk ;
+    skos:related ex:SkaPunk ;
+    skos:scopeNote "A late-1970s UK movement fusing ska, punk rock, and pop melodies."@en .
+
+ex:GothRock a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Goth rock"@en ;
+    skos:broader ex:PostPunk ;
+    skos:related ex:NewRomanticism ;
+    skos:scopeNote "A dark, atmospheric subgenre of post-punk emphasizing melancholy and theatrical gloom."@en .
+
+ex:IndustrialRock a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Industrial rock"@en ;
+    skos:broader ex:PostPunk ;
+    skos:related ex:SynthRock ;
+    skos:scopeNote "A fusion of industrial noise experimentation with traditional rock instrumentation."@en .
+
+ex:NoWave a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "No wave"@en ;
+    skos:broader ex:PostPunk ;
+    skos:related ex:Coldwave, ex:SynthPop, ex:ArtRock ;
+    skos:scopeNote "An avant-garde, dissonant reaction against commercial wave music in late-1970s New York."@en .
+
+
+# =================================================================
+# iii. ROCK & POP MUSIC FAMILY
+# =================================================================
+
+ex:RockAndPopFamily a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Rock & Pop Music Family"@en ;
+    skos:topConceptOf ex:NewWaveScheme ;
+    skos:narrower ex:ArtRock, ex:NewWavePop, ex:DanceRock, ex:PowerPop, ex:AlternativeRock ;
+    skos:scopeNote "Top-level concept grouping melodic, song-oriented rock and pop movements."@en .
+
+ex:ArtRock a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Art rock"@en ;
+    skos:broader ex:RockAndPopFamily ;
+    skos:narrower ex:TheatricalRock, ex:SynthRock ;
+    skos:related ex:PostPunk, ex:NoWave ;
+    skos:scopeNote "Rock music emphasizing conceptual experimentation, avant-garde arrangements, and visual presentation."@en .
+
+ex:TheatricalRock a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Theatrical rock"@en ;
+    skos:broader ex:ArtRock ;
+    skos:related ex:GlamRock, ex:NewRomanticism ;
+    skos:scopeNote "Performance-focused rock featuring dramatic stage personas and narrative song craft."@en .
+
+ex:SynthRock a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Synth-rock"@en ;
+    skos:broader ex:ArtRock ;
+    skos:related ex:SynthPop, ex:IndustrialRock, ex:NewRomanticism ;
+    skos:scopeNote "Rock subgenre where synthesizers share equal prominence with guitars and bass."@en .
+
+ex:NewWavePop a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "New wave pop"@en ;
+    skos:broader ex:RockAndPopFamily ;
+    skos:narrower ex:NewPop, ex:SophistiPop ;
+    skos:related ex:SynthPop, ex:PowerPop ;
+    skos:scopeNote "Broad umbrella for accessible, production-focused pop emerging from new wave."@en .
+
+ex:NewPop a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "New Pop"@en ;
+    skos:altLabel "Nu-Pop"@en ;
+    skos:broader ex:NewWavePop ;
+    skos:related ex:PostDisco, ex:SynthPop, ex:DanceRock, ex:BlueEyedSoul, ex:GlamRock, ex:NewRomanticism ;
+    skos:scopeNote "Early-1980s movement embracing mainstream pop hooks, dance rhythms, and polished visual style."@en .
+
+ex:SophistiPop a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Sophisti-pop"@en ;
+    skos:altLabel "Sophisticated pop"@en ;
+    skos:broader ex:NewWavePop ;
+    skos:related ex:Soul, ex:SynthPop, ex:AdultContemporary, ex:BlueEyedSoul, ex:SmoothJazz, ex:JazzPop, ex:BossaNova, ex:NewRomanticism ;
+    skos:scopeNote "Mid-1980s style combining lush studio craftsmanship, jazz-influenced harmony, and elegant arrangements."@en .
+
+ex:DanceRock a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Dance-rock"@en ;
+    skos:broader ex:RockAndPopFamily ;
+    skos:related ex:FunkRock, ex:PostDisco, ex:PunkFunk, ex:MinneapolisSound, ex:NewPop, ex:NewRomanticism ;
+    skos:scopeNote "Genre blending disco and funk rhythms with rock guitars and vocals."@en .
+
+ex:PowerPop a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Power pop"@en ;
+    skos:broader ex:RockAndPopFamily ;
+    skos:related ex:NewWaveMovement, ex:SynthPop, ex:JanglePop ;
+    skos:scopeNote "Guitar-driven rock combining energetic melodic hooks and 1960s British Invasion influence."@en .
+
+ex:AlternativeRock a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Alternative rock"@en ;
+    skos:altLabel "Alt-rock"@en ;
+    skos:broader ex:RockAndPopFamily ;
+    skos:narrower ex:CollegeRock, ex:JanglePop ;
+    skos:related ex:PostPunk, ex:NewWaveMovement ;
+    skos:scopeNote "Umbrella for independent underground rock emerging in the 1980s."@en .
+
+ex:CollegeRock a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "College rock"@en ;
+    skos:broader ex:AlternativeRock ;
+    skos:related ex:PostPunk, ex:JanglePop ;
+    skos:scopeNote "Early-1980s North American indie rock popularized on campus radio stations."@en .
+
+ex:JanglePop a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Jangle pop"@en ;
+    skos:broader ex:AlternativeRock ;
+    skos:related ex:PowerPop, ex:CollegeRock, ex:PostPunk, ex:NewWaveMovement ;
+    skos:scopeNote "Alternative and power pop subgenre defined by ringing 12-string electric guitar textures."@en .
