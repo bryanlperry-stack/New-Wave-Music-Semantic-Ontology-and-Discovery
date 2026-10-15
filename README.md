@@ -62,8 +62,8 @@ New Wave & Sonic Texture Taxonomy (SKOS Scheme)
 │   │          │   └── [skos:related] ──> Ska Punk 
 │   │          ├── Goth Rock (Narrower)
 │   │          ├── Industrial Rock (Narrower)
-│   │          └── No Wave (Narrower)
-│   │              └── [skos:related] ──> Coldwave / Synth-pop
+│   │          ├── No Wave (Narrower)
+│   │          └── [skos:related] ──> Coldwave / Synth-pop
 │   │
 │   └──  iii.Rock & Pop Music Family (Top Concept)
 │   │        ├── Art Rock (Narrower)
