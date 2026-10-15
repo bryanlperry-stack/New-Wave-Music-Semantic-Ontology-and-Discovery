@@ -45,7 +45,7 @@ New Wave & Sonic Texture Taxonomy (SKOS Scheme)
 │   │     │   ├── Spacesynth (Narrower)
 │   │     │   ├── Synthwave (Narrower)
 │   │     │   ├── Hi-NRG (Narrower)
-│   │     │   │   └── [skos:related] ──> Eurodance / House / Synth-pop
+│   │     │   │   └── [skos:related] ──> Eurodance / House / Synth-pop / Post-Disco
 │   │     │   └── [skos:related] ──> Synth-Pop / House / Trance / Techno /Eurodance
 │   │     │
 │   │     └── Indietronica / Hipster Synth-Pop / Indie Synth-Pop (Narrower/ 2000s-2010s Crossover)
