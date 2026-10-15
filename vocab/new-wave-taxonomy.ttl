@@ -258,7 +258,7 @@ ex:NewWavePop a skos:Concept ;
     skos:prefLabel "New wave pop"@en ;
     skos:broader ex:RockAndPopFamily ;
     skos:narrower ex:NewPop, ex:SophistiPop ;
-    skos:related ex:SynthPop, ex:PowerPop ;
+    skos:related ex:SynthPop, ex:PowerPop , ex:DanceRock ;
     skos:scopeNote "Broad umbrella for accessible, production-focused pop emerging from new wave."@en .
 
 ex:NewPop a skos:Concept ;
@@ -266,7 +266,7 @@ ex:NewPop a skos:Concept ;
     skos:prefLabel "New Pop"@en ;
     skos:altLabel "Nu-Pop"@en ;
     skos:broader ex:NewWavePop ;
-    skos:related ex:PostDisco, ex:SynthPop, ex:DanceRock, ex:BlueEyedSoul, ex:GlamRock, ex:NewRomanticism ;
+    skos:related ex:PostDisco, ex:SynthPop, ex:DanceRock, ex:BlueEyedSoul, ex:NewWavePop, ex:GlamRock, ex:NewRomanticism ;
     skos:scopeNote "Early-1980s movement embracing mainstream pop hooks, dance rhythms, and polished visual style."@en .
 
 ex:SophistiPop a skos:Concept ;
@@ -274,14 +274,14 @@ ex:SophistiPop a skos:Concept ;
     skos:prefLabel "Sophisti-pop"@en ;
     skos:altLabel "Sophisticated pop"@en ;
     skos:broader ex:NewWavePop ;
-    skos:related ex:Soul, ex:SynthPop, ex:ProgressivePop, ex:AdultContemporary, ex:BlueEyedSoul, ex:SmoothJazz, ex:JazzPop, ex:BossaNova, ex:NewRomanticism ;
+    skos:related ex:Soul, ex:SynthPop, ex:ProgressivePop, ex:AdultContemporary, ex:NewWavePop, ex:BlueEyedSoul, ex:SmoothJazz, ex:JazzPop, ex:BossaNova, ex:NewRomanticism ;
     skos:scopeNote "Mid-1980s style combining lush studio craftsmanship, jazz-influenced harmony, and elegant arrangements."@en .
 
 ex:DanceRock a skos:Concept ;
     skos:inScheme ex:NewWaveScheme ;
     skos:prefLabel "Dance-rock"@en ;
     skos:broader ex:RockAndPopFamily ;
-    skos:related ex:FunkRock, ex:PostDisco, ex:PunkFunk, ex:MinneapolisSound, ex:NewPop, ex:NewRomanticism ;
+    skos:related ex:FunkRock, ex:PostDisco, ex:PunkFunk, ex:MinneapolisSound, ex:NewPop, ex:NewWavePop, ex:NewRomanticism ;
     skos:scopeNote "Genre blending disco and funk rhythms with rock guitars and vocals."@en .
 
 ex:PowerPop a skos:Concept ;
