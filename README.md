@@ -69,13 +69,13 @@ New Wave & Sonic Texture Taxonomy (SKOS Scheme)
 │   │        ├── Art Rock (Narrower)
 │   │        │   └── Theatrical Rock (Narrower)
 │   │        │   └── Synth-Rock (Narrower)
-│   │        │       └── [skos:related] ──> New Romantic / Symphonic Rock
+│   │        │       └── [skos:related] ──> New Romantic / Symphonic Rock / Theatrical Rock / Art Rock
 │   │        │
 │   │        ├── New Wave Pop (Narrower)
 │   │        │   ├── New Pop (Narrower)
 │   │        │   │   └── [skos: related] ──> Post-Disco / Synth-Pop / Dance-Rock/ Blue-Eyed Soul / Glam Rock / 
 │   │        │   └── Sophisti-Pop (Narrower)
-│   │        │       └── [skos: related] ──> Soul / Synth-Pop / Adult Contemporary / Blue-Eyed Soul / Smooth Jazz / Jazz Pop / Bossa Nova
+│   │        │       └── [skos: related] ──> Soul / Progressive Pop/ Synth-Pop / Adult Contemporary / Blue-Eyed Soul / Smooth Jazz / Jazz                                               Pop / Bossa Nova
 │   │        ├── Dance-Rock (Narrower)
 │   │        │   └── [skos:related] ──> Funk Rock / Post-Disco / Punk Funk / Minneapolis Sound
 │   │        │
