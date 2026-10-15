@@ -17,4 +17,72 @@ For listeners–particularly younger generations, like Generation Z, exploring h
 ### The Architectural Solution
 Because New Wave (1977-1984) was a multi-genre music movement that serves as a temporal layer for music taxonomy and discovery, 
 
+## Taxonomy Hierarchy & Sonic Texture Schema
+To resolve flat-genre siloing, this taxonomy decouples temporal anchors from acoustic textures. Below is the multi-dimensional SKOS concept hierarchy modeled in 'vocab/new-wave-taxonomy.ttl":
 
+```text
+New Wave & Sonic Texture Taxonomy (SKOS Scheme)
+│
+├── 1. Temporal Anchor Nodes (Historical Movements)
+│   └── New Wave (c. 1977–1984)
+│
+├── 2. Sonic Texture & Micro-Genre Hierarchies
+│   │
+│   ├── i.Electronic Music Family (Top Concept)
+│   │     ├── Synth-pop (Broader)
+│   │     │   ├── Coldwave (Narrower)
+│   │     │   ├── Bubblegum Synth-pop (Narrower)
+│   │     │   └── Techno-pop (Narrower)
+│   │     │         └── Neo-Shibuya-kei (Narrower)
+│   │     │         └── Pico-Pico Pop (Narrower)
+│   │     │         └── [skos:related] ──> Chiptune
+│   │     │    
+│   │     ├── Eurodisco (Broader)
+│   │     │   └── [skos:Related] Italo Disco / Eurodance / Trance / Eurodance/ House
+│   │     │
+│   │     └── Italo Disco (Top Concept/Broader)
+│   │     │   ├── Spacesynth (Narrower)
+│   │     │   ├── Synthwave (Narrower)
+│   │     │   ├── Hi-NRG (Narrower)
+│   │     │   │   └── [skos:related] ──> Eurodance / House / Synth-pop
+│   │     │   └── [skos:related] ──> Synth-Pop / House / Trance / Techno /Eurodance
+│   │     │
+│   │     └── Indietronica / Hipster Synth-Pop / Indie Synth-Pop (Narrower/ 2000s-2010s Crossover)
+│   │         └── Indie Sleaze (Narrower / Aesthetic Micro-Genre) 
+│   │
+│   ├── ii.Punk & Post-Punk Family (Top Concept)
+│   │      ├── Punk Rock (Broader)
+│   │      │   ├── Reggae Punk (Narrower)
+│   │      │   ├── Hardcore Punk (Narrower)
+│   │      │   └── Ska Punk (Narrower)
+│   │      │       └── [skos:related] ──> Two-Tone / Alternative Rock / Reggae Rock
+│   │      │      
+│   │      └── Post-Punk (Broader)
+│   │          ├── Two-Tone (Narrower)
+│   │          │   └── [skos:related] ──> Ska Punk 
+│   │          ├── Goth Rock (Narrower)
+│   │          ├── Industrial Rock (Narrower)
+│   │          ├── No Wave (Narrower)
+│   │              └── [skos:related] ──> Coldwave / Synth-pop
+│   │
+│   └──  iii.Rock & Pop Music Family (Top Concept)
+│        ├── Art Rock (Narrower)
+│        │   └── Theatrical Rock (Narrower)
+│        │   └── Synth-Rock (Narrower)
+│        │   └── [skos:related] ──> New Romantic / Symphonic Rock
+│        │
+│        ├── New Wave Pop (Narrower)
+│        │   ├── New Pop (Narrower)
+│        │   │   └── [skos: related] ──> Post-Disco / Synth-Pop / Dance-Rock/ Blue-Eyed Soul / Glam Rock / 
+│        │   └── Sophisti-Pop (Narrower)
+│        │       └── [skos: related] ──> Soul / Synth-Pop / Adult Contemporary / Blue-Eyed Soul / Smooth Jazz / Jazz Pop / Bossa Nova
+│        ├── Dance-Rock (Narrower)
+│        │   └── [skos:related] ──> Funk Rock / Post-Disco / Punk Funk / Minneapolis Sound
+│        │
+│        ├── Power Pop (Narrower)
+│        │   └── [skos:related] ──> New Wave / Synth-pop
+│        │  
+│        └── Alternative Rock (Narrower)
+│            └── College Rock (Narrower)
+│            └── Jangle Pop (Narrower)
+│            └── [skos:related] ──> Post-punk / New Wave
