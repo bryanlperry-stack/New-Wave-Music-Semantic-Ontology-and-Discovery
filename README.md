@@ -33,8 +33,8 @@ New Wave & Sonic Texture Taxonomy (SKOS Scheme)
 │   │     │   ├── Coldwave (Narrower)
 │   │     │   ├── Bubblegum Synth-pop (Narrower)
 │   │     │   └── Techno-pop (Narrower)
-│   │     │       └── Neo-Shibuya-kei (Narrower)
-│   │     │       └── Pico-Pico Pop (Narrower)
+│   │     │       ├── Neo-Shibuya-kei (Narrower)
+│   │     │       ├── Pico-Pico Pop (Narrower)
 │   │     │       └── [skos:related] ──> Chiptune
 │   │     │    
 │   │     ├── Eurodisco (Broader)
