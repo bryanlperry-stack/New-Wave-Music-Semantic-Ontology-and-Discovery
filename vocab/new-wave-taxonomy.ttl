@@ -31,7 +31,7 @@ ex:NewRomanticism a skos:Concept ;
     skos:inScheme ex:NewWaveScheme ;
     skos:prefLabel "New Romanticism"@en ;
     skos:altLabel "New Romantic movement"@en, "New Romantics"@en ;
-    skos:related ex:SynthPop, ex:SynthRock, ex:DanceRock, ex:NewPop, ex:GothRock, ex:PostPunk ;
+    skos:related ex:SynthPop, ex:SynthRock, ex:DanceRock, ex:NewPop, ex:GothRock, ex:PostPunk , ex:BaroquePop, ex:ArtRock, ex:ChamberPop ;
     skos:scopeNote "A late-1970s to early-1980s UK subcultural and musical movement characterized by flamboyant fashion, theatrical aesthetics, and synth-driven art pop."@en .
 
 
@@ -52,7 +52,7 @@ ex:SynthPop a skos:Concept ;
     skos:prefLabel "Synth-pop"@en ;
     skos:altLabel "Synthesizer pop"@en, "Electropop"@en ;
     skos:broader ex:ElectronicMusicFamily ;
-    skos:narrower ex:Coldwave, ex:BubblegumSynthPop, ex:TechnoPop ;
+    skos:narrower ex: RetroSynthPop, ex:Coldwave, ex:BubblegumSynthPop, ex:TechnoPop ;
     skos:related ex:NewWavePop, ex:NewPop, ex:SophistiPop, ex:NoWave, ex:HiNRG ;
     skos:scopeNote "A subgenre of electronic music where synthesizers, sequencers, and drum machines are the primary instruments."@en .
 
@@ -234,9 +234,9 @@ ex:RockAndPopFamily a skos:Concept ;
 ex:ArtRock a skos:Concept ;
     skos:inScheme ex:NewWaveScheme ;
     skos:prefLabel "Art rock"@en ;
-    skos:broader ex:RockAndPopFamily ;
-    skos:narrower ex:TheatricalRock, ex:SynthRock, ex:New Romanticism,  ex:SymphonicRock ; 
-    skos:related ex:PostPunk, ex:NoWave ;
+    skos:broader ex:RockAndPopFamily ; 
+    skos:narrow ex:SynthRock, ex:SymphonicRock, ex:TheatricalRock, ex:ArtPunk ;
+    skos:related ex:PostPunk, ex:SynthPop, ex:NoWave, ex:New Romanticism, ex:BaroquePop, ex:SophistiPop, ex:ChamberPop ;
     skos:scopeNote "Rock music emphasizing conceptual experimentation, avant-garde arrangements, and visual presentation."@en .
 
 ex:TheatricalRock a skos:Concept ;
