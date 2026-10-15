@@ -33,9 +33,9 @@ New Wave & Sonic Texture Taxonomy (SKOS Scheme)
 │   │     │   ├── Coldwave (Narrower)
 │   │     │   ├── Bubblegum Synth-pop (Narrower)
 │   │     │   └── Techno-pop (Narrower)
-│   │     │         └── Neo-Shibuya-kei (Narrower)
-│   │     │         └── Pico-Pico Pop (Narrower)
-│   │     │         └── [skos:related] ──> Chiptune
+│   │     │       └── Neo-Shibuya-kei (Narrower)
+│   │     │       └── Pico-Pico Pop (Narrower)
+│   │     │       └── [skos:related] ──> Chiptune
 │   │     │    
 │   │     ├── Eurodisco (Broader)
 │   │     │   └── [skos:Related] Italo Disco / Eurodance / Trance / Eurodance/ House
@@ -62,27 +62,27 @@ New Wave & Sonic Texture Taxonomy (SKOS Scheme)
 │   │          │   └── [skos:related] ──> Ska Punk 
 │   │          ├── Goth Rock (Narrower)
 │   │          ├── Industrial Rock (Narrower)
-│   │          ├── No Wave (Narrower)
+│   │          └── No Wave (Narrower)
 │   │              └── [skos:related] ──> Coldwave / Synth-pop
 │   │
 │   └──  iii.Rock & Pop Music Family (Top Concept)
-│        ├── Art Rock (Narrower)
-│        │   └── Theatrical Rock (Narrower)
-│        │   └── Synth-Rock (Narrower)
-│        │   └── [skos:related] ──> New Romantic / Symphonic Rock
-│        │
-│        ├── New Wave Pop (Narrower)
-│        │   ├── New Pop (Narrower)
-│        │   │   └── [skos: related] ──> Post-Disco / Synth-Pop / Dance-Rock/ Blue-Eyed Soul / Glam Rock / 
-│        │   └── Sophisti-Pop (Narrower)
-│        │       └── [skos: related] ──> Soul / Synth-Pop / Adult Contemporary / Blue-Eyed Soul / Smooth Jazz / Jazz Pop / Bossa Nova
-│        ├── Dance-Rock (Narrower)
-│        │   └── [skos:related] ──> Funk Rock / Post-Disco / Punk Funk / Minneapolis Sound
-│        │
-│        ├── Power Pop (Narrower)
-│        │   └── [skos:related] ──> New Wave / Synth-pop
-│        │  
-│        └── Alternative Rock (Narrower)
-│            └── College Rock (Narrower)
-│            └── Jangle Pop (Narrower)
-│            └── [skos:related] ──> Post-punk / New Wave
+│   │        ├── Art Rock (Narrower)
+│   │        │   └── Theatrical Rock (Narrower)
+│   │        │   └── Synth-Rock (Narrower)
+│   │        │       └── [skos:related] ──> New Romantic / Symphonic Rock
+│   │        │
+│   │        ├── New Wave Pop (Narrower)
+│   │        │   ├── New Pop (Narrower)
+│   │        │   │   └── [skos: related] ──> Post-Disco / Synth-Pop / Dance-Rock/ Blue-Eyed Soul / Glam Rock / 
+│   │        │   └── Sophisti-Pop (Narrower)
+│   │        │       └── [skos: related] ──> Soul / Synth-Pop / Adult Contemporary / Blue-Eyed Soul / Smooth Jazz / Jazz Pop / Bossa Nova
+│   │        ├── Dance-Rock (Narrower)
+│   │        │   └── [skos:related] ──> Funk Rock / Post-Disco / Punk Funk / Minneapolis Sound
+│   │        │
+│   │        ├── Power Pop (Narrower)
+│   │        │   └── [skos:related] ──> Jangle Pop / New Wave / Synth-pop
+│   │        │  
+│   │        └── Alternative Rock (Narrower)
+│                ├── College Rock (Narrower)
+│                ├── Jangle Pop (Narrower)
+│                └── [skos:related] ──> Post-punk / New Wave / Power Pop / Indie Pop
