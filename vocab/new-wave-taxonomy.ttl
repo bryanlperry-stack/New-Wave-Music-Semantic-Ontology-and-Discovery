@@ -235,7 +235,7 @@ ex:ArtRock a skos:Concept ;
     skos:inScheme ex:NewWaveScheme ;
     skos:prefLabel "Art rock"@en ;
     skos:broader ex:RockAndPopFamily ;
-    skos:narrower ex:TheatricalRock, ex:SynthRock ;
+    skos:narrower ex:TheatricalRock, ex:SynthRock, ex:New Romanticism,  ex:SymphonicRock ; 
     skos:related ex:PostPunk, ex:NoWave ;
     skos:scopeNote "Rock music emphasizing conceptual experimentation, avant-garde arrangements, and visual presentation."@en .
 
@@ -250,7 +250,7 @@ ex:SynthRock a skos:Concept ;
     skos:inScheme ex:NewWaveScheme ;
     skos:prefLabel "Synth-rock"@en ;
     skos:broader ex:ArtRock ;
-    skos:related ex:SynthPop, ex:IndustrialRock, ex:NewRomanticism ;
+    skos:related ex:SynthPop, ex:IndustrialRock, ex:NewRomanticism , ex:TheatricalRock,  ex:ArtRock ;
     skos:scopeNote "Rock subgenre where synthesizers share equal prominence with guitars and bass."@en .
 
 ex:NewWavePop a skos:Concept ;
@@ -274,7 +274,7 @@ ex:SophistiPop a skos:Concept ;
     skos:prefLabel "Sophisti-pop"@en ;
     skos:altLabel "Sophisticated pop"@en ;
     skos:broader ex:NewWavePop ;
-    skos:related ex:Soul, ex:SynthPop, ex:AdultContemporary, ex:BlueEyedSoul, ex:SmoothJazz, ex:JazzPop, ex:BossaNova, ex:NewRomanticism ;
+    skos:related ex:Soul, ex:SynthPop, ex:ProgressivePop, ex:AdultContemporary, ex:BlueEyedSoul, ex:SmoothJazz, ex:JazzPop, ex:BossaNova, ex:NewRomanticism ;
     skos:scopeNote "Mid-1980s style combining lush studio craftsmanship, jazz-influenced harmony, and elegant arrangements."@en .
 
 ex:DanceRock a skos:Concept ;
