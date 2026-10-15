@@ -1,0 +1,92 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex:    <http://example.org/music-taxonomy/> .
+
+# =================================================================
+# PUNK & POST-PUNK FAMILY (TOP CONCEPT)
+# =================================================================
+
+ex:PunkAndPostPunkFamily a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Punk & Post-Punk Family"@en ;
+    skos:topConceptOf ex:NewWaveScheme ;
+    skos:narrower ex:PunkRock, ex:PostPunk ;
+    skos:scopeNote "A top-level concept grouping high-energy, anti-establishment, D.I.Y., and experimental guitar-driven movements emerging from the mid-to-late 1970s underground."@en .
+
+# -----------------------------------------------------------------
+# 1. Punk Rock Branch
+# -----------------------------------------------------------------
+
+ex:PunkRock a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Punk rock"@en ;
+    skos:broader ex:PunkAndPostPunkFamily ;
+    skos:narrower ex:ReggaeRock, ex:HardcorePunk, ex:SkaPunk ;
+    skos:related ex:NewWaveMovement ;
+    skos:scopeNote "A fast, aggressive rock music genre originating in the mid-1970s characterized by short songs, stripped-down instrumentation, and anti-establishment lyrics."@en .
+
+ex:ReggaeRock a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Reggae-rock"@en ;
+    skos:altLabel "Punk-reggae"@en, "Reggae punk"@en ;
+    skos:broader ex:PunkRock ;
+    skos:related ex:TwoTone, ex:SkaPunk, ex:PostPunk ;
+    skos:scopeNote "A fusion genre pioneered by late-1970s British punk acts (e.g., The Clash) that combined raw punk guitar textures and lyrics with Jamaican roots reggae and dub rhythms."@en .
+
+ex:HardcorePunk a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Hardcore punk"@en ;
+    skos:altLabel "Hardcore"@en ;
+    skos:broader ex:PunkRock ;
+    skos:scopeNote "A faster, heavier, and more aggressive evolution of punk rock originating in North America in the late 1970s."@en .
+
+ex:SkaPunk a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Ska punk"@en ;
+    skos:broader ex:PunkRock ;
+    skos:related ex:TwoTone, ex:AlternativeRock, ex:ReggaeRock ;
+    skos:scopeNote "A fusion genre combining punk rock/hardcore instrumentation and song structures with upbeat ska rhythms and horn sections, emerging heavily in the late 1980s and 1990s."@en .
+
+# -----------------------------------------------------------------
+# 2. Post-Punk Branch
+# -----------------------------------------------------------------
+
+ex:PostPunk a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Post-punk"@en ;
+    skos:broader ex:PunkAndPostPunkFamily ;
+    skos:narrower ex:TwoTone, ex:GothRock, ex:IndustrialRock, ex:NoWave ;
+    skos:related ex:Coldwave, ex:SynthPop, ex:AlternativeRock ;
+    skos:scopeNote "A broad movement emerging from late-1970s punk rock that retained punk's D.I.Y. energy while integrating experimental instrumentation, art rock aesthetics, funk rhythms, and electronic synthesis."@en .
+
+ex:TwoTone a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Two-tone"@en ;
+    skos:altLabel "2-Tone"@en, "2 Tone"@en ;
+    skos:broader ex:PostPunk ;
+    skos:related ex:SkaPunk, ex:PunkRock ;
+    skos:scopeNote "A British late-1970s/early-1980s music movement that fused traditional Jamaican ska, rocksteady, and reggae with post-punk and pub rock aggression and socially conscious themes."@en .
+
+ex:GothRock a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Goth rock"@en ;
+    skos:altLabel "Gothic rock"@en ;
+    skos:broader ex:PostPunk ;
+    skos:related ex:Coldwave, ex:IndustrialRock ;
+    skos:scopeNote "A dark, atmospheric offshoot of post-punk characterized by bass-heavy arrangements, flanged guitar textures, and dramatic, somber vocal stylings."@en .
+
+ex:IndustrialRock a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "Industrial rock"@en ;
+    skos:broader ex:PostPunk ;
+    skos:related ex:AlternativeRock, ex:Coldwave, ex:SynthRock ;
+    skos:scopeNote "A genre combining the abrasive electronic noise, tape loops, and metallic percussion of industrial music with the driving guitars and song structures of post-punk and alternative rock."@en .
+
+ex:NoWave a skos:Concept ;
+    skos:inScheme ex:NewWaveScheme ;
+    skos:prefLabel "No Wave"@en ;
+    skos:broader ex:PostPunk ;
+    skos:related ex:ArtRock ;
+    skos:scopeNote "A short-lived, highly avant-garde late-1970s Downtown New York underground movement prioritizing harsh dissonance, noise, and non-traditional song structures over punk melody."@en .
