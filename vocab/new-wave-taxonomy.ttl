@@ -304,7 +304,7 @@ ex:CollegeRock a skos:Concept ;
     skos:inScheme ex:NewWaveScheme ;
     skos:prefLabel "College rock"@en ;
     skos:broader ex:AlternativeRock ;
-    skos:related ex:PostPunk, ex:JanglePop, ex:IndiePop, ex:PowerPop,;
+    skos:related ex:PostPunk, ex:JanglePop, ex:IndiePop, ex:PowerPop ;
     skos:scopeNote "Early-1980s North American indie rock popularized on campus radio stations."@en .
 
 ex:JanglePop a skos:Concept ;
