@@ -7,8 +7,8 @@ Commercial music streaming platforms (e.g., Apple Music, Spotify) rely on collab
 ### The Human League (classic synth-pop)
 ### Gary Numan (dark synth-pop) 
 ### The Cars (guitar-driven power pop)
-### Duran Duran (dance-rock/pop-rock) 
-### Ultravox (synth-rock, theatrical-Rock, symphonic art-rock) 
+### Duran Duran (dance-rock / pop-rock) 
+### Ultravox (synth-rock / theatrical-Rock / symphonic art-rock) 
 ### ABC (synth pop/synthesizer-driven new pop/blue-eyed soul/post disco)
 are frequently lumped into a single continuous "1980s New Wave" or "New Wave" playlist. Because New Wave (1977-1984) was a multi-genre, cross-decade music movement, using it as a Broad Term to curate music is far too imprecise for increasingly granular taxonomies of music discovery.
 ### Discovery Friction
