@@ -31,6 +31,7 @@ New Wave & Sonic Texture Taxonomy (SKOS Scheme)
 │   ├── i.Electronic Music Family (Top Concept)
 │   │     ├── Synth-pop (Broader)
 │   │     │   ├── Coldwave (Narrower)
+│   │     │   ├── Retro Synth-pop
 │   │     │   ├── Bubblegum Synth-pop (Narrower)
 │   │     │   └── Techno-pop (Narrower)
 │   │     │       ├── Neo-Shibuya-kei (Narrower)
