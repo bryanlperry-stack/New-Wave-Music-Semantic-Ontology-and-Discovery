@@ -1,4 +1,3 @@
-
 ```mermaid
 flowchart TD
  subgraph Layer1["Layer 1: Top-Level Cultural / Root Domains"]
@@ -60,8 +59,7 @@ flowchart TD
      IT:::layer4
      EF:::layer4
      HO:::layer4
-     SN:::layer4
-     
+     SN:::layer4  
     classDef layer1 fill:#f9f,stroke:#333,stroke-width:2px
     classDef layer2 fill:#bbf,stroke:#333,stroke-width:1px
     classDef layer3 fill:#bfb,stroke:#333,stroke-width:1px
