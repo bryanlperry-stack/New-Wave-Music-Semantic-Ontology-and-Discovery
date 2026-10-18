@@ -1,30 +1,48 @@
 ```mermaid
 flowchart TD
- subgraph Layer1["Layer 1: Top-Level Cultural / Root Domains"]
+    subgraph Layer1["Layer 1: Top-Level Cultural / Root Domains"]
         EM["Electronic Music"]
         PP["Punk & Post-Punk"]
-  end
- subgraph Layer2["Layer 2: Philosophical & Lineage Foundations"]
+    end
+
+    subgraph Layer2["Layer 2: Philosophical & Lineage Foundations"]
         AC["Academic / Avant-Garde Lineage"]
         DL["Dance-Driven / Groove Lineage"]
         SP["Song-Driven / Pop Lineage"]
-        n1["Post-Punk"] & n2["Punk"]
-  end
- subgraph Layer3["Layer 3: Historical Eras & Intermediary Trunks"]
+        n1["Post-Punk"]
+        n2["Punk"]
+    end
+
+    subgraph Layer3["Layer 3: Historical Eras & Intermediary Trunks"]
         DS["Disco Root"]
         ED["Eurodisco"]
         HN["Hi-NRG"]
         PD["American Post-Disco Trunk"]
-        
-  end
- subgraph Layer4["Layer 4: Terminal Subgenres & Club Offshoots"]
+    end
+
+    subgraph Layer4["Layer 4: Terminal Subgenres & Club Offshoots"]
         IT["Italo Disco"]
         EF["Electro-Funk / Boogie"]
         HO["House Music"]
         SN["Synth-Pop"]
-  end
-  subgraph Layer4["Layer 4: New Wave Child Genres"]
-  end
+    end
+
+    subgraph Layer4_NW["Layer 4: New Wave Child Genres"]
+        n3["Paisley Underground / Neo-Psychedelia"]
+        n6["Gothic Rock / Dark Wave"]
+        n10["Jangle Pop"]
+        n11["Indie Pop"]
+        n12["New Wave Music"]
+        n13["New Wave Rock"]
+        n14["New Wave Pop"]
+        n15["New Pop"]
+        n16["Sophisti-Pop"]
+        n17["Synth-Rock"]
+        n18["Dance-Rock"]
+        n7["Techno-Pop"] 
+        n8["Electro-Pop"]
+    end
+
     EM --> AC & DL & SP
     AC --> SN
     SP --> SN
@@ -34,34 +52,36 @@ flowchart TD
     PD --> EF & HO
     HN -. "Production Cross-Pollination" .-> SN
     ED -. "Production Cross-Pollination" .-> SN
-    n1["Post-Punk"] -. "Production Cross-Pollination" .-> SN
+    n1 -. "Production Cross-Pollination" .-> SN
     AC -. "Production Cross-Pollination" .-> SN
-    PP --> n1["Post-Punk"] & n2["Punk"] 
-    n1 --> n3["Paisley Underground / Neo-Psychedelia"] & n6["Gothic Rock / Dark Wave"] & n10["Jangle Pop"] & n11["Indie Pop"]
-    SN --> n7["Techno-Pop"] 
-    SN --> n8["Electro-Pop"]
-    n1 --> n12["New Wave Music"]
-	n12--> n13["New Wave Rock"]
-	n12--> n14["New Wave Pop"]
-	n14-->n15["New Pop"]
-	n14-->n16["Sophisti-Pop"]
-	n13-->n17["Synth-Rock"]
-	n13-->n18["Dance-Rock"]
-     EM:::layer1
-     PP:::layer1
-     AC:::layer2
-     DL:::layer2
-     SP:::layer2
-     DS:::layer3
-     ED:::layer3
-     HN:::layer3
-     PD:::layer3
-     IT:::layer4
-     EF:::layer4
-     HO:::layer4
-     SN:::layer4  
+    PP --> n1 & n2 
+    n1 --> n3 & n6 & n10 & n11
+    SN --> n7 
+    SN --> n8
+    n1 --> n12
+    n12 --> n13
+    n12 --> n14
+    n14 --> n15
+    n14 --> n16
+    n13 --> n17
+    n13 --> n18
+
     classDef layer1 fill:#f9f,stroke:#333,stroke-width:2px
     classDef layer2 fill:#bbf,stroke:#333,stroke-width:1px
     classDef layer3 fill:#bfb,stroke:#333,stroke-width:1px
     classDef layer4 fill:#fbb,stroke:#333,stroke-width:1px
+
+    EM:::layer1
+    PP:::layer1
+    AC:::layer2
+    DL:::layer2
+    SP:::layer2
+    DS:::layer3
+    ED:::layer3
+    HN:::layer3
+    PD:::layer3
+    IT:::layer4
+    EF:::layer4
+    HO:::layer4
+    SN:::layer4
 ```
