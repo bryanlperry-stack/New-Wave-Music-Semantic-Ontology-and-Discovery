@@ -87,3 +87,7 @@ New Wave & Sonic Texture Taxonomy (SKOS Scheme)
 │                ├── College Rock (Narrower)
 │                ├── Jangle Pop (Narrower)
 │                └── [skos:related] ──> Post-punk / New Wave / Power Pop / Indie Pop
+
+
+![Image Description]/Electronic Music Family.drawio.png
+
