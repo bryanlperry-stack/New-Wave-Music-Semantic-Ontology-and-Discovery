@@ -3,30 +3,26 @@ flowchart TD
     subgraph Layer1["Layer 1: Top-Level Cultural / Root Domains"]
         EM["Electronic Music"]
         PP["Punk & Post-Punk"]
-    end
-
+        end
     subgraph Layer2["Layer 2: Philosophical & Lineage Foundations"]
         AC["Academic / Avant-Garde Lineage"]
         DL["Dance-Driven / Groove Lineage"]
         SP["Song-Driven / Pop Lineage"]
         n1["Post-Punk"]
         n2["Punk"]
-    end
-
+        end
     subgraph Layer3["Layer 3: Historical Eras & Intermediary Trunks"]
         DS["Disco Root"]
         ED["Eurodisco"]
         HN["Hi-NRG"]
         PD["American Post-Disco Trunk"]
-    end
-
+        end
     subgraph Layer4["Layer 4: Terminal Subgenres & Club Offshoots"]
         IT["Italo Disco"]
         EF["Electro-Funk / Boogie"]
         HO["House Music"]
         SN["Synth-Pop"]
-    end
-
+        end
     subgraph Layer4_NW["Layer 4: New Wave Child Genres"]
         n3["Paisley Underground / Neo-Psychedelia"]
         n6["Gothic Rock / Dark Wave"]
@@ -41,8 +37,7 @@ flowchart TD
         n18["Dance-Rock"]
         n7["Techno-Pop"] 
         n8["Electro-Pop"]
-    end
-
+        end
     EM --> AC & DL & SP
     AC --> SN
     SP --> SN
@@ -65,12 +60,10 @@ flowchart TD
     n14 --> n16
     n13 --> n17
     n13 --> n18
-
     classDef layer1 fill:#f9f,stroke:#333,stroke-width:2px
     classDef layer2 fill:#bbf,stroke:#333,stroke-width:1px
     classDef layer3 fill:#bfb,stroke:#333,stroke-width:1px
     classDef layer4 fill:#fbb,stroke:#333,stroke-width:1px
-
     EM:::layer1
     PP:::layer1
     AC:::layer2
