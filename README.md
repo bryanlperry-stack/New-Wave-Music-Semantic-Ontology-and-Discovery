@@ -89,5 +89,6 @@ New Wave & Sonic Texture Taxonomy (SKOS Scheme)
 │                └── [skos:related] ──> Post-punk / New Wave / Power Pop / Indie Pop
 ```
 
-![Image Description]/Electronic Music Family.drawio.png
+![App Dashboard](Electronic Music Family.drawio.png)
+
 
